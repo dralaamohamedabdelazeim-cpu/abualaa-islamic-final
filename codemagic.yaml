@@ -7,6 +7,7 @@ workflows:
     scripts:
       - name: Build APK
         script: |
+          curl -o gradlew https://raw.githubusercontent.com/gradle/gradle/v8.0.0/gradlew
           chmod +x gradlew
           ./gradlew assembleDebug --no-daemon
     artifacts:
